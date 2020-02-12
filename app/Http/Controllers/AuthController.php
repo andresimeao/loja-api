@@ -11,10 +11,5 @@ class AuthController extends Controller
     {
         $this->model = $auth;
     }
-
-    public function auth(Request $request){
-       $users = $this->model->all();
-       return response()->json($users);
-    }
-    
+      
 }

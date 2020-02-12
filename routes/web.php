@@ -11,8 +11,9 @@
 |
 */
 
-$router->group(['prefix'=> '/loja-auth'], function() use ($router){
+$router->group(['prefix'=> '/auth'], function() use ($router){
     $router->get('/', "AuthController@auth");
+    $router->post('/register', "AuthController@register");
         
 });
 
